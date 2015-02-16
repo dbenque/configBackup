@@ -34,10 +34,10 @@ do
   fi
 done
 
-# if [ $onechange -ne 0 ]
-#   then
-#   cd $D
-#   git add --all
-#   git commit -am "Auto Synch"
-#   git push origin master
-# fi
+if [ $onechange -ne 0 ]
+  then
+  cd $D
+  git add --all
+  git commit -am "Auto Synch"
+  git push origin master
+fi
