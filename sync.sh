@@ -20,6 +20,10 @@ tosync=("${tosync[@]}" "$HOME/.i3/config@@@$P/config" )
 P="$D/conky"
 tosync=("${tosync[@]}" "$HOME/.config/conky/conkyrc@@@$P/conkyrc" "$HOME/.config/conky/conky_grey.lua@@@$P/conky_grey.lua")
 
+#compton
+P="$D/compton"
+tosync=("${tosync[@]}" "$HOME/.config/compton.conf@@@$P/compton.conf")
+
 onechange=0
 
 for entry in ${tosync[@]}
