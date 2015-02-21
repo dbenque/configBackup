@@ -9,8 +9,14 @@ double_buffer yes
 no_buffers yes
 text_buffer_size 2048
 
+
+${if_match ${monitor_number} > 1 }
 gap_x 1950
-gap_y 100
+${else}
+gap_x 1700
+${endif}
+
+gap_y 50
 minimum_size 210 450
 maximum_width 210
 border_inner_margin 0
@@ -37,6 +43,7 @@ color1 DDDDDD
 color2 AAAAAA
 color3 888888
 color4 666666
+color5 FF3D3D
 
 lua_load ~/.config/conky/conky_grey.lua
 lua_draw_hook_post main
@@ -86,4 +93,19 @@ ${goto 90}${font Sans:size=7,weight:normal}${color1}Up: ${upspeed enp3s0}${goto 
 ${goto 90}${font Sans:size=7,weight:normal}${color1}Down: ${downspeed enp3s0}${goto 90}${font}${alignr}${color3}${downspeedgraph enp3s0 8,40}
 ${goto 90}${font Sans:size=7,weight:normal}${color1}Total Up: ${totalup enp3s0}
 ${goto 90}${font Sans:size=7,weight:normal}${color1}Total Down: ${totaldown enp3s0}
+${endif}
+
+${voffset 20}
+${if_match ${battery_percent BAT1} <= 10 }
+${goto 70}${font Sans:size=18,weight:bold}${color5}BATTERY${alignr}${color2}${font Sans:size=7,weight:bold}${color}
+${goto 70}${font Sans:size=7,weight:bold}${color}${battery_time BAT1}
+${voffset 2}
+${goto 90}${color5}${battery_bar 8,100 BAT1}
+${goto 90}${battery BAT1}
+${else}
+${goto 70}${font Sans:size=18,weight:bold}${color1}BATTERY${alignr}${color2}${font Sans:size=7,weight:bold}${color}
+${goto 70}${font Sans:size=7,weight:bold}${color}${battery_time BAT1}
+${voffset 2}
+${goto 90}${color1}${battery_bar 8,100 BAT1}
+${goto 90}${battery BAT1}
 ${endif}
