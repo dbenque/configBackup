@@ -24,6 +24,10 @@ tosync=("${tosync[@]}" "$HOME/.config/conky/conkyrc@@@$P/conkyrc" "$HOME/.config
 P="$D/compton"
 tosync=("${tosync[@]}" "$HOME/.config/compton.conf@@@$P/compton.conf")
 
+#bin
+P="$D/bin"
+tosync=("${tosync[@]}" "$HOME/bin/tablette@@@$P/tablette" "$HOME/bin/youtubedl@@@$P/youtubedl")
+
 onechange=0
 
 for entry in ${tosync[@]}
