@@ -30,7 +30,7 @@ tosync=("${tosync[@]}" "$HOME/bin/tablette@@@$P/tablette" "$HOME/bin/youtubedl@@
 
 #maintenance
 P="$D/maintenance"
-tosync=("${tosync[@]}" "/root/maintenance/maintenance.sh@@@$P/maintenance/maintenance.sh" "/root/maintenance/pkglist.txt@@@$P/maintenance/pkglist.txt")
+tosync=("${tosync[@]}" "/root/maintenance/maintenance.sh@@@$P/maintenance.sh" "/root/maintenance/pkglist.txt@@@$P/pkglist.txt")
 
 onechange=0
 
