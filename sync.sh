@@ -28,6 +28,10 @@ tosync=("${tosync[@]}" "$HOME/.config/compton.conf@@@$P/compton.conf")
 P="$D/bin"
 tosync=("${tosync[@]}" "$HOME/bin/tablette@@@$P/tablette" "$HOME/bin/youtubedl@@@$P/youtubedl" "$HOME/bin/dockerClean@@@$P/dockerClean")
 
+#maintenance
+#P="$D/maintenance"
+#tosync=("${tosync[@]}" "/root/maintenance/maintenance.sh@@@$P/maintenance/maintenance.sh" "/root/maintenance/pkglist.txt@@@$P/maintenance/pkglist.txt"
+
 onechange=0
 
 for entry in ${tosync[@]}
