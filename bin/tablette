@@ -1,0 +1,19 @@
+#!/bin/bash
+
+folder=/mnt/usb/GTN5110
+
+if [ "$1" = "-u" ]
+then
+echo "Umounting $folder"
+fusermount -u $folder
+exit
+fi
+
+if [ "$(cat /etc/mtab | grep $folder | wc -l)" != "0" ]
+then
+echo "Already mounted at $folder"
+exit
+fi
+
+echo "Mounting at $folder"
+ go-mtpfs -dev="GT-N5110" $folder &
