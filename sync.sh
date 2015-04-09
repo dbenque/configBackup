@@ -26,7 +26,7 @@ tosync=("${tosync[@]}" "$HOME/.config/compton.conf@@@$P/compton.conf")
 
 #bin
 P="$D/bin"
-tosync=("${tosync[@]}" "$HOME/bin/tablette@@@$P/tablette" "$HOME/bin/youtubedl@@@$P/youtubedl" "$HOME/bin/dockerClean@@@$P/dockerClean")
+tosync=("${tosync[@]}" "$HOME/bin/tablette@@@$P/tablette" "$HOME/bin/youtubedl@@@$P/youtubedl" "$HOME/bin/dockerClean@@@$P/dockerClean" "$HOME/bin/dockerStop@@@$P/dockerStop")
 
 #maintenance
 P="$D/maintenance"
