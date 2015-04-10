@@ -62,9 +62,9 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+#bindsym $mod+Shift+s layout stacking
+#bindsym $mod+Shift+w layout tabbed
+#bindsym $mod+Shift+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -135,8 +135,12 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bindsym $mod+t exec compton-trans -c -o 75
+# Screen capture
+bindsym --release $mod+s exec scrot -s -e 'mv $f ~/Images/screenshots/'
+
+# Transparency
 bindsym $mod+Shift+t exec compton-trans -c -o 100
+bindsym $mod+t exec compton-trans -c -o 75
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)

@@ -32,5 +32,8 @@ compton -b
 #conky
 conky -c ~/.config/conky/conkyrc
 
+#keyboar layout switch
+setxkbmap -layout us,fr -option grp:alt_shift_toggle
+
 #Windows Manager
 exec i3
