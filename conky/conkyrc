@@ -73,6 +73,7 @@ ${goto 140}${font Sans:size=5,weight:bold}${color}${fs_used /mnt/code}
 ${goto 140}${font Sans:size=5,weight:bold}${color}${fs_used /mnt/media}
 ${goto 140}${font Sans:size=5,weight:bold}${color}${fs_used /mnt/data}
 ${goto 140}${font Sans:size=5,weight:bold}${color}${fs_used /var/lib/docker}
+${goto 140}${font Sans:size=5,weight:bold}${color}${fs_used /mnt/vbox}
 ${goto 140}${font Sans:size=5,weight:bold}${color}${fs_used /}
 
 ${voffset 40}
