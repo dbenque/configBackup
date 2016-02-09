@@ -16,8 +16,8 @@ alias lsmap='gdmap -f `pwd`'
 alias gitAddModified='git status | grep "modified:" | awk "{print \$2}" | xargs git add'
 
 
-PS1='\[\e[0;33m\]\t \[\e[0;32m\]\u@\h:\[\e[1;34m\]\w\[\e[m\]\n\[\e[1;32m\]>\[\e[m\] '
-
+PS1='\[\e[0;31m\][\e[0;34m$?\e[0;31m]\t \[\e[0;33m\]\t \[\e[0;32m\]\u@\h:\[\e[1;34m\]\w\[\e[m\]\n\[\e[1;32m\]>\[\e[m\] '
+# \[\e[0;33m\]$(__git_ps1)\n\[\e[0;31m\]
 #Golang related section
 export GOPATH=/home/david/code/go
 
