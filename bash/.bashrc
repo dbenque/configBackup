@@ -12,6 +12,8 @@ alias ls='ls --color=auto'
 alias ll='ls -la'
 alias lsmap='gdmap -f `pwd`'
 
+## 1A
+alias 278='ssh dbenque@172.16.137.89'
 ## Git
 alias gitAddModified='git status | grep "modified:" | awk "{print \$2}" | xargs git add'
 source $HOME/.bash_git
