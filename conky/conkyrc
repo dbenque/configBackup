@@ -31,7 +31,7 @@ override_utf8_locale yes
 use_xft yes
 xftfont Sans:size=8
 xftalpha 0.5
-uppercase no
+uppercase yes
 
 default_color 1994D1
 color1 DDDDDD
