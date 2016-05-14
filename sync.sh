@@ -10,7 +10,7 @@ tosync=("$HOME/.xinitrc@@@$P/.xinitrc" "$HOME/.Xresources@@@$P/.Xresources")
 
 #bash
 P="$D/bash"
-tosync=("${tosync[@]}" "$HOME/.bash_profile@@@$P/.bash_profile" "$HOME/.bashrc@@@$P/.bashrc" "$HOME/.bash_logout@@@$P/.bash_logout")
+tosync=("${tosync[@]}" "$HOME/.bash_profile@@@$P/.bash_profile" "$HOME/.bashrc@@@$P/.bashrc" "$HOME/.bash_git@@@$P/.bash_git" "$HOME/.bash_logout@@@$P/.bash_logout")
 
 #i3
 P="$D/i3"
