@@ -18,6 +18,10 @@ alias 278='ssh dbenque@172.16.137.89'
 alias gitAddModified='git status | grep "modified:" | awk "{print \$2}" | xargs git add'
 source $HOME/.bash_git
 
+## vscode
+alias code='/usr/bin/visual-studio-code'
+
+
 ## Media
 alias pdf='mupdf'
 
