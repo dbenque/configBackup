@@ -9,11 +9,11 @@ double_buffer yes
 no_buffers yes
 text_buffer_size 2048
 
-gap_x 1700
+gap_x 1550
 gap_y 50
 
-minimum_size 210 450
-maximum_width 210
+minimum_size 350 450
+maximum_width 350
 border_inner_margin 0
 border_outer_margin 0
 own_window yes
@@ -29,7 +29,7 @@ draw_graph_borders no
 
 override_utf8_locale yes
 use_xft yes
-xftfont Sans:size=8
+xftfont Sans:size=4
 xftalpha 0.5
 uppercase yes
 
@@ -64,11 +64,11 @@ ${goto 90}${font Sans:size=7,weight:normal}${color2}${top_mem name 2}${alignr}${
 ${goto 90}${font Sans:size=7,weight:normal}${color3}${top_mem name 3}${alignr}${top_mem mem 3}%
 
 ${voffset 75}
-${goto 115}${font Sans:size=7,weight:bold}${color}DISKS
+${goto 115}${font Sans,size=7,weight:bold}${color}DISKS
 
 #${goto 90}${diskiograph 30,100 666666 666666}${voffset -30}
 ${voffset -22}
-${goto 140}${font Sans:size=5,weight:bold}${color}${fs_used /boot}
+${goto 140}${font Sans,size:4,weight:bold}${color}${fs_used /boot}
 ${goto 140}${font Sans:size=5,weight:bold}${color}${fs_used /mnt/code}
 ${goto 140}${font Sans:size=5,weight:bold}${color}${fs_used /mnt/media}
 ${goto 140}${font Sans:size=5,weight:bold}${color}${fs_used /mnt/data}
@@ -77,7 +77,7 @@ ${goto 140}${font Sans:size=5,weight:bold}${color}${fs_used /mnt/vbox}
 ${goto 140}${font Sans:size=5,weight:bold}${color}${fs_used /}
 
 ${voffset 40}
-${goto 70}${font Sans:size=18,weight:bold}${color3}NET${alignr}${font Sans:size=7,weight:bold}${color}
+${goto 70}${font Sans:size=7,weight:bold}${color3}NET${alignr}${font Sans:size=7,weight:bold}${color}
 ${if_up wlp4s0}${goto 70}wifi ${addr wlp4s0}
 ${goto 90}${font Sans:size=7,weight:normal}${color1}Up: ${upspeed wlp4s0}${goto 90}${font}${alignr}${color3}${upspeedgraph wlp4s0 8,50}
 ${goto 90}${font Sans:size=7,weight:normal}${color1}Down: ${downspeed wlp4s0}${goto 90}${font}${alignr}${color3}${downspeedgraph wlp4s0 8,40}
