@@ -15,7 +15,7 @@ require 'cairo'
 clock_h = {
     {
     name='time',                   arg='%H',                    max_value=12,
-    x=150,                         y=70,
+    x=150,                         y=80,
     graph_radius=53,
     graph_thickness=3,
     graph_unit_angle=30,           graph_unit_thickness=30,
@@ -34,7 +34,7 @@ clock_h = {
 clock_m = {
     {
     name='time',                   arg='%M',                    max_value=60,
-    x=150,                         y=70,
+    x=150,                         y=80,
     graph_radius=57,
     graph_thickness=2,
     graph_unit_angle=6,            graph_unit_thickness=6,
@@ -53,7 +53,7 @@ clock_m = {
 clock_s = {
     {
     name='time',                   arg='%S',                    max_value=60,
-    x=150,                         y=70,
+    x=150,                         y=80,
     graph_radius=50,
     graph_thickness=2,
     graph_unit_angle=6,            graph_unit_thickness=2,
