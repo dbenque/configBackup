@@ -56,8 +56,8 @@ ${goto 90}${font Sans:size=7:weight=normal}${color1}${top name 1}${alignr}${top 
 ${goto 90}${font Sans:size=7:weight=normal}${color2}${top name 2}${alignr}${top cpu 2}%
 ${goto 90}${font Sans:size=7:weight=normal}${color3}${top name 3}${alignr}${top cpu 3}%
 ${goto 90}${font Sans:size=7:weight=normal}${color3}${top name 3}${alignr}${top cpu 4}%
-${goto 90}${cpugraph 10,100 666666 666666}
-${goto 90}${voffset -10}${font Sans:size=7:weight=normal}${color}${processes} processes
+${goto 90}${cpugraph 25,100 666666 666666}
+${goto 90}${voffset -35}${font Sans:size=7:weight=normal}${color}${processes} processes
 
 
 ${voffset 55}
