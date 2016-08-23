@@ -28,6 +28,7 @@ alias pdf='mupdf'
 PS1='\[\e[0;29m\][\e[0;31m$?\e[0;29m] \[\e[0;33m\]\t \[\e[0;32m\]\u@\h:\[\e[1;34m\]\w\[\e[m\]\[\e[0;33m\]$(__git_ps1)\n\[\e[1;32m\]>\[\e[m\] '
 #Golang related section
 export GOPATH=/home/david/code/go
+export GOROOT=/home/david/code/goroot
 
 #Path
-PATH=$PATH:~/bin:$GOPATH/bin
+PATH=$PATH:~/bin:$GOROOT/bin:$GOPATH/bin
