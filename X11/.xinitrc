@@ -18,7 +18,8 @@ xrdb -merge ~/.Xresources
 xscreensaver -no-splash &
 
 #multiple screen
-xrandr --output VGA1 --left-of eDP1 --auto
+#xrandr --output VGA1 --left-of eDP1 --auto
+.screenlayout/finally3screen.sh
 
 #wallpaper
 feh --bg-fill ~/.wallpapers
@@ -37,3 +38,4 @@ setxkbmap -layout us,fr -option grp:alt_shift_toggle
 
 #Windows Manager
 exec i3
+#exec i3 --force-xinerama -V >>~/.i3/i3log 2>&1
