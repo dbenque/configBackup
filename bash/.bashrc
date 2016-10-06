@@ -22,6 +22,9 @@ source $HOME/.bash_git
 alias code='/usr/bin/visual-studio-code'
 
 
+#GO
+alias gopath='export GOPATH=`pwd`'
+
 ## Media
 alias pdf='mupdf'
 
