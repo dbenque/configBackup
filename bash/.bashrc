@@ -19,7 +19,7 @@ alias gitAddModified='git status | grep "modified:" | awk "{print \$2}" | xargs 
 source $HOME/.bash_git
 
 ## vscode
-alias code='/usr/bin/visual-studio-code'
+alias vcode='/usr/bin/code --disable-gpu'
 
 
 #GO
