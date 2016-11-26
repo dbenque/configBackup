@@ -21,6 +21,8 @@ source $HOME/.bash_git
 ## vscode
 alias vcode='/usr/bin/code --disable-gpu'
 
+## kubernetes
+alias k='kubectl'
 
 #GO
 alias gopath='export GOPATH=`pwd`'
@@ -35,3 +37,6 @@ export GOROOT=/home/david/code/goroot
 
 #Path
 PATH=$PATH:~/bin:$GOROOT/bin:$GOPATH/bin
+
+#Editor
+EDITOR=vim
