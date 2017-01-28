@@ -19,8 +19,10 @@ alias gitAddModified='git status | grep "modified:" | awk "{print \$2}" | xargs 
 source $HOME/.bash_git
 
 ## vscode
-alias vcode='/usr/bin/code --disable-gpu'
-
+##alias vcode='/usr/bin/code --disable-gpu'
+function vcode(){
+/usr/bin/code --disable-gpu $1
+}
 ## kubernetes
 alias k='kubectl'
 
