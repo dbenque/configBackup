@@ -16,6 +16,10 @@ tosync=("${tosync[@]}" "$HOME/.bash_profile@@@$P/.bash_profile" "$HOME/.bashrc@@
 P="$D/i3"
 tosync=("${tosync[@]}" "$HOME/.i3/config@@@$P/config" )
 
+#screenlayout
+P="$D/screenlayout"
+tosync=("${tosync[@]}" "$HOME/.screenlayout/finally3screen.sh@@@$P/finally3screen.sh" )
+
 #conky
 P="$D/conky"
 tosync=("${tosync[@]}" "$HOME/.config/conky/conkyrc@@@$P/conkyrc" "$HOME/.config/conky/conky_grey.lua@@@$P/conky_grey.lua")
