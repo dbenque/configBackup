@@ -12,20 +12,20 @@
 #fi
 
 # config merge
-xrdb -merge ~/.Xresources
+#xrdb -merge ~/.Xresources
 
 # screensaver
 xscreensaver -no-splash &
 
 #multiple screen
 #xrandr --output VGA1 --left-of eDP1 --auto
-.screenlayout/finally3screen.sh
+#.screenlayout/finally3screen.sh
 
 #wallpaper
 feh --bg-fill ~/.wallpapers
 
 #keybord Layout
-setxkbmap -model pc105 -layout fr
+#setxkbmap -model pc105 -layout fr
 
 #transparency
 compton -b
@@ -36,6 +36,6 @@ conky -c ~/.config/conky/conkyrc
 #keyboar layout switch
 setxkbmap -layout us,fr -option grp:alt_shift_toggle
 
-#Windows Manager
-exec i3
+#Windows Manager (already launched by lightdm
+#exec i3
 #exec i3 --force-xinerama -V >>~/.i3/i3log 2>&1
