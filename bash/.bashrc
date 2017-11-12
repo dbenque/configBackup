@@ -18,6 +18,10 @@ alias 278='ssh dbenque@172.16.137.89'
 alias gitAddModified='git status | grep "modified:" | awk "{print \$2}" | xargs git add'
 source $HOME/.bash_git
 
+## Kube
+source $HOME/.bash_k8s
+source $HOME/bin/kcontext.sh
+
 ## vscode
 ##alias vcode='/usr/bin/code --disable-gpu'
 function vcode(){
@@ -32,7 +36,7 @@ alias gopath='export GOPATH=`pwd`'
 ## Media
 alias pdf='mupdf'
 
-PS1='\[\e[0;29m\][\e[0;31m$?\e[0;29m] \[\e[0;33m\]\t \[\e[0;32m\]\u@\h:\[\e[1;34m\]\w\[\e[m\]\[\e[0;33m\]$(__git_ps1)\n\[\e[1;32m\]>\[\e[m\] '
+PS1='\[\e[0;29m\][\e[0;31m$?\e[0;29m] \[\e[0;33m\]\t $(__kube_ps1) \[\e[0;32m\]\u@\h:\[\e[1;34m\]\w\[\e[m\]\[\e[0;33m\]$(__git_ps1)\n\[\e[1;32m\]>\[\e[m\] '
 #Golang related section
 export GOPATH=/home/david/code/go
 export GOROOT=/home/david/code/goroot
