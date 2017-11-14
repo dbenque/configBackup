@@ -22,6 +22,11 @@ source $HOME/.bash_git
 source $HOME/.bash_k8s
 source $HOME/bin/kcontext.sh
 
+## gcloud
+source $HOME/google-cloud-sdk/completion.bash.inc
+source $HOME/google-cloud-sdk/path.bash.inc
+
+
 ## vscode
 ##alias vcode='/usr/bin/code --disable-gpu'
 function vcode(){
