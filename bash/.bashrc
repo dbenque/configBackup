@@ -18,6 +18,8 @@ alias 278='ssh dbenque@172.16.137.89'
 alias gitAddModified='git status | grep "modified:" | awk "{print \$2}" | xargs git add'
 source $HOME/.bash_git
 
+alias ssh-pi='ssh pi@192.168.0.33'
+
 ## Kube
 source $HOME/.bash_k8s
 source $HOME/bin/kcontext.sh
