@@ -36,6 +36,7 @@ function vcode(){
 }
 ## kubernetes
 alias k='kubectl'
+kps1
 
 #GO
 alias gopath='export GOPATH=`pwd`'
